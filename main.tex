@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{fontspec}
+% switch to a monospace font supporting more Unicode characters
+\setmonofont{JuliaMono}
+\usepackage{listings}
+\usepackage{amssymb, amsmath}
+
+%colors for syntax highlighting
+\usepackage{color}
+\definecolor{keywordcolor}{rgb}{0.7, 0.1, 0.1}   % red
+\definecolor{tacticcolor}{rgb}{0.0, 0.1, 0.6}    % blue
+\definecolor{commentcolor}{rgb}{0.4, 0.4, 0.4}   % grey
+\definecolor{symbolcolor}{rgb}{0.0, 0.1, 0.6}    % blue
+\definecolor{sortcolor}{rgb}{0.1, 0.5, 0.1}      % green
+\definecolor{attributecolor}{rgb}{0.7, 0.1, 0.1} % red
+
+\def\lstlanguagefiles{lstlean.tex}
+% set default language
+\lstset{language=lean}
+
+\begin{document}
+
+\title{Report on the Workshop "Polyhedra in Lean"}
+\include{authors.tex}
+\date{\today}
+
+\maketitle
+
+\include{stub_section.tex}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

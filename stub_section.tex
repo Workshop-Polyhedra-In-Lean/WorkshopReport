@@ -1,0 +1,19 @@
+\section{Stub section}
+
+Here's the hyperplane definition of a polytope over the reals, typeset using the \texttt{amsmath} package.
+
+\[
+  P = \left\{ x \in \mathbb{R}^n \;\middle|\; A x \le b \right\},
+  \qquad A \in \mathbb{R}^{m \times n},\ b \in \mathbb{R}^m,
+\]
+
+Here's the point definition of a set being a polytope over a strictly ordered semiring in lean\cite{10.1007/978-3-030-79876-5_37}.
+
+\begin{lstlisting}
+variable [Semiring R] [PartialOrder R] [IsStrictOrderedRing R]
+variable [ConvexSpace R X]
+
+variable (R) in
+/-- A set is a polytope if it is the convex hull of finitely many points. -/
+def IsPolytope (s : Set X) : Prop := ∃ t : Finset X, s = convexHull R t
+\end{lstlisting}
