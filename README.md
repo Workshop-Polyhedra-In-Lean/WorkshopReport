@@ -16,4 +16,4 @@ If you change the `references.bib` file, run
 ```
 to build the bibliography.
 
-Add your content to a new file called `my_group_report.tex` and include it in the `main.tex` file. You can find an example in `stub_section.tex`. Don't forget to add your name to the `authors.tex` file.
+Don't forget to add your name to the `authors.tex` file.
