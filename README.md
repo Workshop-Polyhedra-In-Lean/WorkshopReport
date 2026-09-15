@@ -2,7 +2,7 @@
 A repository to coordinate writing a workshop report document on the 2026 Polyhedra In Lean workshop.
 
 ## Usage
-Add your report section to the `section.tex` file.
+To add your part of the report, make a new file shaped like `section_template.tex`, put your content, and insert a new line `\include{my_section.tex}` at the appropriate place in `main.tex`.
 
 You need to install the [`JuliaMono`](https://juliamono.netlify.app/download/) font for proper unicode support, which we want for the code listings. You also need to build with `xelatex` instead of `pdflatex` to use it. If you don't want to install the font, comment the `\setmonofont{JuliaMono}` in `main.tex` and prepare for latex warnings and placeholder characters in the compiled document.
 
